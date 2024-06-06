@@ -62,7 +62,7 @@ class PersonData:
             self.unique_occupations.add(person.occupation)
 
             # Multi name count
-            if len(person.name.split()) > 2:
+            if len(person.name.split(" ")) > 2:
                 self.multi_name_count += 1
 
             # Same birth and death month and day
